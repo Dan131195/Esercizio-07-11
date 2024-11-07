@@ -1,12 +1,21 @@
 // Esercizi aggiuntivi (facoltativi) per D4
 
+console.log('--- Esercizi extra ---')
+
 /* EXTRA 1
  Scrivi una funzione chiamata "checkArray" che riceve un array di numeri casuali (creati con la funzione "giveMeRandom") e per ogni elemento stampa in console
  se il suo valore è maggiore di 5 o no.
  La funzione deve inoltre ritornare la somma di tutti i valori maggiori di 5.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+function checkArray (number = []) {
+    number.push(Math.floor(Math.random() * 11));
+    number.push(Math.floor(Math.random() * 11));
+    number.push(Math.floor(Math.random() * 11));
+    return number;   
+}
+console.log(checkArray());
+
 
 /* EXTRA 2
  Nel tuo eCommerce disponi di un'array di oggetti chiamato "shoppingCart". Ognuno di questi oggetti ha le seguenti proprietà: "price", "name", "id" e "quantity".
